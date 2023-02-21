@@ -361,6 +361,7 @@ h3 {
 .header h1 {
   color: #ffffff;
   text-align: center;
+  margin: 2rem;
 }
 @media (min-width: 768px) {
   .header h1 {
@@ -403,6 +404,7 @@ h3 {
 .video {
   position: relative;
   max-height: 70rem;
+  min-height: 50rem;
   overflow: hidden;
 }
 .video .overlay {
@@ -417,10 +419,18 @@ h3 {
   text-align: center;
 }
 .video video {
-  width: 100%;
+  width: auto;
   display: block;
 }
+@media (min-width: 992px) {
+  .video video {
+    width: 100%;
+  }
+}
 
+.contenedor-video {
+  z-index: 10;
+}
 .contenedor-video h2 {
   color: #ffffff;
   font-size: 2rem;
