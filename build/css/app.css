@@ -355,6 +355,11 @@ h3 {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .header {
   background-color: #000000;
 }
@@ -453,4 +458,29 @@ h3 {
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 2rem;
+}
+
+.sobre-festival {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.contenido-festival {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenido-festival h2 {
+  margin-bottom: 2rem;
+}
+.contenido-festival .fecha {
+  color: #180065;
+  font-weight: bold;
 }
