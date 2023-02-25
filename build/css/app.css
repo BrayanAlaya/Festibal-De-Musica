@@ -368,6 +368,12 @@ img {
 .header {
   background-color: #000426;
 }
+@media (min-width: 768px) {
+  .header-fijo {
+    position: fixed;
+    width: 100%;
+  }
+}
 .header h1 {
   color: #ffffff;
   text-align: center;
@@ -378,11 +384,11 @@ img {
     margin: 0;
   }
 }
-.header .header__contenido {
+.header__contenido {
   padding: 2rem;
 }
 @media (min-width: 768px) {
-  .header .header__contenido {
+  .header__contenido {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -643,4 +649,59 @@ img {
 .overlay .btn-cerrar:hover {
   cursor: pointer;
   background-color: #000426;
+}
+
+.boletos-section {
+  color: #ffffff;
+  background-color: #000426;
+  padding: 5rem 0;
+}
+.boletos-section h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .boletos-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.boletos {
+  text-align: center;
+}
+.boletos p {
+  color: #ffffff;
+}
+.boletos header {
+  background-color: #020a82;
+}
+.boletos footer {
+  background-color: #ff0000;
+}
+.boletos header, .boletos footer {
+  padding: 1rem;
+}
+.boletos-descripcion {
+  background-color: #ffffff;
+  color: #000426;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.boletos-descripcion li {
+  padding: 1rem;
+  text-align: left;
+}
+
+.site-footer {
+  background-color: #020a82;
+  padding: 1rem;
+}
+.site-footer p {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
 }
