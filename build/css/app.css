@@ -322,6 +322,9 @@ body {
   font-family: "montserrat", sans-serif;
   font-size: 1.6rem;
 }
+body.fijar-body {
+  overflow: hidden;
+}
 
 p {
   font-size: 2rem;
@@ -579,6 +582,7 @@ img {
 }
 
 .galeria-imagenes {
+  cursor: pointer;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -606,4 +610,37 @@ img {
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
   }
+}
+
+.overlay {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay picture {
+  display: block;
+  max-width: 80rem;
+}
+.overlay .btn-cerrar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #020a82;
+  font-size: 3rem;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  margin: 0;
+}
+.overlay .btn-cerrar:hover {
+  cursor: pointer;
+  background-color: #000426;
 }
